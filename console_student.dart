@@ -42,7 +42,7 @@ void main() {
 
       case '2':
         stdout.write('학생목록:');
-        for (int i = 0; students.length < i; i++) {
+        for (int i = 0; i < students.length; i++) {
           print('${i + 1}.${students[i].name}-${students[i].score}점');
         }
         break;
@@ -65,6 +65,7 @@ void main() {
         break;
 
       default:
+        print('다시입력');
     }
   }
 }
